@@ -26,7 +26,7 @@ public class Cv3Application {
 			this.statsService = usersService;
 		}
 
-		@GetMapping
+		@GetMapping({"/", "/store"})
 		public String main(Model model) {
 			Item item = new Item();
 			item.setItemType(ItemType.Pizza);
